@@ -54,6 +54,18 @@ Save to grepper
 Step 6: Update Environment Variables
 Make sure that the MinGW binaries are in your system's PATH. You can either add the MinGW/bin directory to your PATH manually or use the MSYS2 export command:
 
+
+
+```js
+pacman -S make
+```
+
+```js
+pacman -S base-devel
+pacman -S mingw-w64-i686-toolchain #for compiling x32 binaries
+pacman -S mingw-w64-x86_64-toolchain #for compiling x64 binaries
+pacman -S lzip #for extracting gmp
+```
 bash
 Copy code
 ```js
